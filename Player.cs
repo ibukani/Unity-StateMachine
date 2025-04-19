@@ -29,6 +29,11 @@ public class PlayerBehaviour : MonoBehaviour
     
     private IPlayerState.State _currentState = IPlayerState.State.Idle;
 
+    // 可変変数はParent(PlayerBehaviour)クラス内に実装する。
+    // Stateの処理実装クラスには可変変数は基本的に実装を行ってはならない！（共通のクラスを使うため）
+    private float health = 100.0f;
+    private float mana = 100.0f;
+
     void Start()
     {
         // ステートマシンの初期化
