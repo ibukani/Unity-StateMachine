@@ -82,6 +82,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     #endregion
 
+
+
     // ステートマシーンの実処理の実行クラス
     #region StateMechine Implementation
 
